@@ -95,13 +95,13 @@ io.on('connection', function(socket){
   socket.on('disconnect', function(){
     var status = removeUser(socket.id);
     console.log(socket.id + " disconnected")
-    console.log(status)
-    if(status){
+
+   // if(status){
       io.emit('dconn', socket.id);
-    }
-    else{
-      io.emit('dconn', "");
-    }
+   // }
+   // else{
+    //  io.emit('dconn', "");
+   // }
   });
 });
 
@@ -143,16 +143,16 @@ function changeNickColor(hexVal, socketID){
 function removeUser(name){
   for (var i in users){
     if (users[i].id === name){
-      console.log(users[i].count)
-      if(users[i].count <= 1){
+     // console.log(users[i].count)
+     // if(users[i].count <= 1){
         
       users.splice(i, 1);
-      return true;
-      }
-      else{
-        users[i].count = users[i].count-1;
-        return false;
-      }
+      //return true;
+      //}
+      //else{
+        //users[i].count = users[i].count-1;
+        //return false;
+     // }
     }
   }
 }
