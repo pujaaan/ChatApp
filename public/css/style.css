@@ -1,0 +1,103 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html{
+    height: 100%;
+}
+body { 
+    height: 100%;
+    font: 13px Helvetica, Arial; 
+}
+#appName{
+    text-align: center;
+}
+form { 
+    /* background: #000;  */
+    padding: 3px; 
+    position: fixed;
+    width: 99%; 
+    bottom: 0; 
+    left:0;
+    right:0;
+    margin: auto;
+    border: 2px solid black;
+}
+form input { border: 0;
+    padding: 10px; 
+    width: 88%; 
+    margin-right: .5%;
+    border: 2px solid black; 
+}
+form button { width: 9%; 
+    background: rgb(130, 224, 255); 
+    border: none; 
+    padding: 10px; 
+    width: 11%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+#msgUserContainer{
+    overflow-y: auto;
+    height: 87%;
+    position: relative;
+    margin-bottom: 44px;
+    padding-bottom: 10px;
+}
+#msgContainer{
+    width: 69%;
+    height: 100%;
+    position: relative;
+    float:left;
+    margin: 0 0 0 0;
+    padding: 0;
+    background: gray;
+}
+#messages { 
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    max-height: 96%;
+    overflow-y:auto;
+    background: none;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    word-break: break-all;
+}
+#messages li { 
+    padding: 5px 10px; 
+}
+
+#userContainer{
+    width:29%;
+    height:100%;
+    position: relative; 
+    float: right;
+    margin: 0 0 0 5px;
+    padding:0;
+    background: gray;
+}
+#users { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-height: 96%;
+    overflow-y:auto;
+    background: gray;
+    list-style-type: none; 
+    margin: 0 0 0 0; 
+    padding: 0; 
+}
+#users li { 
+    padding: 5px 10px; 
+}
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }

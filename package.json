@@ -1,0 +1,9 @@
+{
+    "name": "chat-room",
+    "version": "0.0.1",
+    "description": "Seng 513 A3",
+    "dependencies": {
+        "express": "^4.16.4",
+        "socket.io": "^2.2.0"
+    }
+}
